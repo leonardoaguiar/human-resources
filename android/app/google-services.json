@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "145654505939",
+    "firebase_url": "https://leo-human-resources.firebaseio.com",
+    "project_id": "leo-human-resources",
+    "storage_bucket": "leo-human-resources.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145654505939:android:81bf5ad7a2607f65474f26",
+        "android_client_info": {
+          "package_name": "com.leo.humanresources"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145654505939-05cr5vr56ki9ahk10lp83cupfeigs5i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkSo3dbjKy4WOJZJ82GdJ-gxDSsILubOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145654505939-05cr5vr56ki9ahk10lp83cupfeigs5i9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
