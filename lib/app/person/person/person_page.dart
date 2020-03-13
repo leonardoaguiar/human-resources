@@ -15,18 +15,21 @@ class PersonPage extends StatefulWidget {
 class _PersonPageState extends State<PersonPage> {
   final _dateFormat = DateFormat("dd/MM/yyyy");
   TextEditingController _nameController;
+  TextEditingController _surnameController;
   final _bloc = PersonBloc();
 
   @override
   void initState() {
     _bloc.setPerson(widget.person);
     _nameController = TextEditingController(text: widget.person.name);
+    _surnameController = TextEditingController(text: widget.person.surname);
     super.initState();
   }
 
   @override
   void dispose() {
     _nameController.dispose();
+    _surnameController.dispose();
     super.dispose();
   }
 
@@ -46,6 +49,16 @@ class _PersonPageState extends State<PersonPage> {
                     decoration: InputDecoration(labelText: "Nome"),
                     controller: _nameController,
                     onChanged: _bloc.setName,
+                  ),
+                ),
+                Container(height: 20),
+                Container(
+                  child: TextField(
+                    decoration: InputDecoration(
+                        helperText: "Insira o seu sobrenome",
+                        labelText: "Sobrenome"),
+                    controller: _surnameController,
+                    onChanged: _bloc.setSurname,
                   ),
                 ),
                 Container(height: 20),

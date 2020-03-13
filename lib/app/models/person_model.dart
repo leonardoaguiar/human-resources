@@ -4,6 +4,7 @@ import "package:humanresources/app/shared/base_model.dart";
 class Person extends BaseModel {
   String _documentId;
   String name;
+  String surname;
   bool active;
   DateTime birthDate;
 
@@ -13,6 +14,7 @@ class Person extends BaseModel {
     _documentId = document.documentID;
 
     this.name = document.data["name"];
+    this.surname = document.data["surname"];
     this.active = document.data["active"] ?? false;
     Timestamp timestamp = document.data["birthDate"];
     this.birthDate =
@@ -24,6 +26,7 @@ class Person extends BaseModel {
     // TODO: implement toMap
     var map = new Map<String, dynamic>();
     map['name'] = this.name;
+    map['surname'] = this.surname;
     map['active'] = this.active;
     map['birthDate'] = this.birthDate;
     return map;
