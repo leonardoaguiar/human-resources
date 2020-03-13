@@ -46,7 +46,7 @@ class PersonBloc extends BlocBase {
 
   void setName(String value) => _nameController.sink.add(value);
 
-  void setSurname(String value) => _surnameController.sink.add(value),
+  void setSurname(String value) => _surnameController.sink.add(value);
 
   bool insertOrUpdate() {
     var person = Person()
